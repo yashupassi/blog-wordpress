@@ -28,8 +28,12 @@
            <b class="slash">|</b>
            <span class="ClanOT-Book blog">BLOG</span>
 </span>
-           <a href="../index#main-home">  <button class="btn">Request Demo</button></a>
+           <a href="https://www.dockabl.com/#main-home">  <button class="btn">Request Demo</button></a>
+           <div class="menu-btn"></div>
+           <div class="menu-btn"></div>
+           <div class="menu-btn" style="height: 3px"></div>
 		</header>
+
 	 
 	</div>
 	

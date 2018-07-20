@@ -86,7 +86,7 @@
 <div class="main-co3">
         <div>
           <div style="color: white">
-          <a href="https://www.dockabl.com/index#main-home" class="request-demo ClanOT-Book">Request Demo</a>
+          <a href="https://www.dockabl.com/team" class="request-demo ClanOT-Book">Team</a>
         </div><div style="color: white">
           <a href="https://www.dockabl.com/contact" class="request-demo ClanOT-Book">Contact us</a>
         </div>
@@ -96,18 +96,7 @@
       </div>
       </div>
 
- <div class="main-co4">
-   <div> 
-   <div style="color: white">
-          <a href="https://www.dockabl.com/team" class="request-demo ClanOT-Book">Team</a>
-        </div><div style="color: white">
-          <a href="" class="request-demo ClanOT-Book">FAQ</a>
-        </div>
-        <div style="color: white">
-          <a href="" class="request-demo ClanOT-Book">Terms & privacy</a>
-        </div>
-  </div> 
- </div>
+
 
 
  </div>
@@ -280,6 +269,26 @@ window.onclick = function(event) {
           });
         });
       </script>
+      
+      <style>
+#myInput{
+position: fixed;
+top: -100px;
+}
+</style>
+<input type="text" value="Hello World" id="myInput" >
+<script>
+ document.getElementById("myInput").value = window.location.href; 
+function copyTextFun() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert("url copied")
+  
+}
+</script>
+
+
 
 
 </body>
