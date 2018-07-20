@@ -5085,7 +5085,7 @@ padding: 60px 228px 25px 228px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-ul{
+.side-buttons ul{
   width: 100px;
   position: absolute;
   overflow: hidden;
