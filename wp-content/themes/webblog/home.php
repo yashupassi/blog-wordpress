@@ -50,7 +50,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
     		echo '<div class="boxed">
             <div class="boxed-left-side"> 
-               <a href="?p='. $post->ID .'"><img src='.get_the_post_thumbnail_url($post).'>.
+               <a href="?p='. $post->ID .'"><img src='.get_the_post_thumbnail_url($post).'>
                </a>
                
             </div>

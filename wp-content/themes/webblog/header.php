@@ -24,7 +24,7 @@
 	
    <header >
     <span class="logo-sec">
-                 <a href="https://www.dockabl.com/"> <img src="http://localhost/wordpress/wp-content/uploads/2018/07/logo.png"></a>
+                 <a href="https://www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/logo.png"></a>
            <b class="slash">|</b>
            <span class="ClanOT-Book blog">BLOG</span>
 </span>

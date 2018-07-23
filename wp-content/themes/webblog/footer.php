@@ -50,7 +50,7 @@
    <div class="column1">
       <div class="main-row">
          <div class="main-co1" style="float: left;">
-            <a href="https://www.dockabl.com/"> <img src="http://localhost/wordpress/wp-content/uploads/2018/07/Capturedockabl.png" class="dock-img"></a>
+            <a href="https://www.dockabl.com/"> <img src="http:/wp-content/uploads/2018/07/Capturedockabl.png" class="dock-img"></a>
 
  <div class="row11">
                        <div class="column111">

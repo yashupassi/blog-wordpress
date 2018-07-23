@@ -26,7 +26,7 @@ if ( post_password_required() ) {
       
 
       <div>
-        <img src="http://localhost/wordpress/wp-content/uploads/2018/07/chat.png" class="chat-img">
+        <img src="/wp-content/uploads/2018/07/chat.png" class="chat-img">
           <div class="cmnt ClanOT-News">
 			<?php
 				$comment_count = get_comments_number();

@@ -5806,6 +5806,7 @@ list-style-type: none;
   height: 37px; 
   padding-left: 7px;
   font-size: 23px; 
+  line-height: 0 !important;
 }
 .row li a:link {
     color: black;
