@@ -443,4 +443,6 @@ function custom_echo($x, $length){
     $y=substr($x,0,$length) . '...';
     return $y;
   }
+
+
 }

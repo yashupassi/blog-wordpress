@@ -4990,13 +4990,13 @@ header{
   font-size: 20px;
     margin-right: 14px;
     position: relative;
-    top: -9px;
+    top: -14px;
     margin-left: 14px;
 }
 
 .blog{
       position: relative;
-    top: -7px;
+    top: -11px;
     font-size: 24px;
    
      opacity: 0.9;
@@ -5060,6 +5060,8 @@ color: black;
 }
 .main-img img{
 	width:100%;
+	    object-fit: cover;
+    background-position: center;
 	height:400px;
 }
 

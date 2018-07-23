@@ -7,7 +7,7 @@
 
 ?>
 <div class="back ClanOT-Book container_header">
-        <a href="http://localhost/wordpress">   < Back to all Insights</a>
+        <a href=<?php echo get_site_url()?> >  < Back to all Insights</a>
    </div>
 <div>
 	<div class="main-img">
