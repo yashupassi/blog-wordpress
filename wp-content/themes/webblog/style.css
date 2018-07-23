@@ -4998,7 +4998,7 @@ header{
       position: relative;
     top: -7px;
     font-size: 24px;
-     line-height: 1.04;
+   
      opacity: 0.9;
 }
 
@@ -5807,7 +5807,7 @@ list-style-type: none;
   height: 37px; 
   padding-left: 7px;
   font-size: 23px; 
-  line-height: 0 !important;
+ 
 }
 .row li a:link {
     color: black;
