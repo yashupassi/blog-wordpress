@@ -4983,6 +4983,7 @@ header{
 	width:132px;
 	height:18px;
 	float:left;
+	margin-top: -3px;
 }
 
 .slash{
@@ -6623,6 +6624,7 @@ form#commentform div.social-networks{
         margin-left: 0;
 
 }
+
 .back {
 
         margin-top: 15px;
