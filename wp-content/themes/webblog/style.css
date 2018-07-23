@@ -4986,7 +4986,7 @@ header{
 	
 }
 
-.slash{
+.logo-sec .slash{
   font-size: 20px;
     margin-right: 14px;
     position: relative;
@@ -4994,7 +4994,7 @@ header{
     margin-left: 14px;
 }
 
-.blog{
+.logo-sec .blog{
       position: relative;
     top: -11px;
     font-size: 24px;
@@ -6427,7 +6427,7 @@ form#commentform div.social-networks{
 }
 .title {
   font-size: 36px;
-  margin-top: 28px;
+  margin-top: 0;
 }
 
 .knowledge-txt{
@@ -6435,7 +6435,7 @@ form#commentform div.social-networks{
   margin-top: 14px
 }
 .boxed{
-  margin-top: 39px;
+  margin-top: 10px;
   display: inline-block;
 }
 
@@ -6632,7 +6632,7 @@ form#commentform div.social-networks{
 
 .back {
 
-        margin-top: 15px;
+        margin-top: -20px;
         opacity: 0.9;
         font-size: 16px;
         line-height: 1.56;
