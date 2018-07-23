@@ -5102,6 +5102,7 @@ transition: .6s;
   width: 40px;
   height: 40px;
   margin-left: 11px;
+      cursor: pointer;
 }
 
 .side-buttons li i{
@@ -6283,6 +6284,7 @@ input[type="text"].name-box {
         font-weight: 300;
         line-height: 1.56;
         margin-top: 35px;
+        border-radius: 0px;
 
 }
 
@@ -6298,6 +6300,7 @@ input[type="password"].name-box {
         font-size: 16px !important;
         font-weight: 300 !important;
         line-height: 1.56 !important;
+        border-radius: 0px !important;
 
 }
 
@@ -6419,7 +6422,7 @@ form#commentform div.social-networks{
 .menu-btn{
       display: inherit;
     position: relative;
-    top: -37px;
+    top: -47px;
     left: 94%;
 }
 .title {
@@ -6465,7 +6468,7 @@ form#commentform div.social-networks{
 }
 .boxed-right-side {
 	font-size: 18px;
-	margin-top: -20px;
+	margin-top: 0;
 }
 
 
@@ -6577,18 +6580,18 @@ form#commentform div.social-networks{
 .main-co1{
   float: left;
   width: 33%;
-  margin-left: -150px;
+  margin-left: -170px;
   margin-top: 120px;
 } 
 .main-co2{
-  margin-left: 60px;
+  margin-left: 30px;
   float: left;
   width: 27%;
   margin-top: 120px;
 }
 
 .main-co3{
-  margin-left: 100px;
+  margin-left: 130px;
   float: left;
   width: 27%;
   margin-top: 120px;
@@ -6673,7 +6676,7 @@ form#commentform div.social-networks{
   
 
 }
-ul {
+.side-buttons ul {
 
         width: 100%;
         display: flex;

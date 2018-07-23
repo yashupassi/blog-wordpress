@@ -24,11 +24,11 @@
 	
    <header >
     <span class="logo-sec">
-                 <a href="https://www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/logo.png"></a>
+                 <a href="//www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/logo.png"></a>
            <b class="slash">|</b>
            <span class="ClanOT-Book blog">BLOG</span>
 </span>
-           <a href="https://www.dockabl.com/#main-home">  <button class="btn">Request Demo</button></a>
+           <a href="//www.dockabl.com/#main-home">  <button class="btn">Request Demo</button></a>
            <div class="menu-btn"></div>
            <div class="menu-btn"></div>
            <div class="menu-btn" style="height: 3px"></div>

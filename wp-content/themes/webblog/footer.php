@@ -50,17 +50,17 @@
    <div class="column1">
       <div class="main-row">
          <div class="main-co1" style="float: left;">
-            <a href="https://www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/Capturedockabl.png" class="dock-img"></a>
+            <a href="//www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/Capturedockabl.png" class="dock-img"></a>
 
  <div class="row11">
                        <div class="column111">
-     <a href="https://www.facebook.com/Dockabl1/" target="_blank" ><li style="padding-left: 11px;font-size: 29px;"><i class="fa fa-facebook"></i></li></a>          
+     <a href="//www.facebook.com/Dockabl1/" target="_blank" ><li style="padding-left: 11px;font-size: 29px;"><i class="fa fa-facebook"></i></li></a>          
           </div>
                        <div class="column112">
-      <a href="https://www.linkedin.com/company/dockabl/" target="_blank"><li><i class="fa fa-linkedin"></i></li> </a>            
+      <a href="//www.linkedin.com/company/dockabl/" target="_blank"><li><i class="fa fa-linkedin"></i></li> </a>            
            </div>
                        <div class="column113">
-         <a href="https://twitter.com/Dockabl1" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
+         <a href="//twitter.com/Dockabl1" target="_blank"><li><i class="fa fa-twitter"></i></li></a>
       
              
            </div>
@@ -72,13 +72,13 @@
       <div class="main-co2" >
         <div>
         <div style="color: white">
-         <a href="https://www.dockabl.com/features#slide_1" class="objectives ClanOT-Bold "> Objectives</a>
+         <a href="//www.dockabl.com/features#slide_1" class="objectives ClanOT-Bold "> Objectives</a>
         </div><div style="color: white" style="margin-top: 10px">
-          <a href="https://www.dockabl.com/features#slide_2" class="ClanOT-Bold objectives"> Reviews</a>
+          <a href="//www.dockabl.com/features#slide_2" class="ClanOT-Bold objectives"> Reviews</a>
         </div>
         <div style="color: white">
          
-         <a href="https://www.dockabl.com/features#slide_3" class="ClanOT-Bold objectives">   Recognition</a>
+         <a href="//www.dockabl.com/features#slide_3" class="ClanOT-Bold objectives">   Recognition</a>
         </div>
       </div>
         
@@ -86,9 +86,9 @@
 <div class="main-co3">
         <div>
           <div style="color: white">
-          <a href="https://www.dockabl.com/team" class="request-demo ClanOT-Book">Team</a>
+          <a href="//www.dockabl.com/team" class="request-demo ClanOT-Book">Team</a>
         </div><div style="color: white">
-          <a href="https://www.dockabl.com/contact" class="request-demo ClanOT-Book">Contact us</a>
+          <a href="//www.dockabl.com/contact" class="request-demo ClanOT-Book">Contact us</a>
         </div>
         
         <div style="color: white">
