@@ -4987,17 +4987,17 @@ header{
 }
 
 .logo-sec .slash{
-  font-size: 20px;
+  font-size: 19px;
     margin-right: 14px;
     position: relative;
-    top: -14px;
+    top: -13px;
     margin-left: 14px;
 }
 
 .logo-sec .blog{
       position: relative;
-    top: -11px;
-    font-size: 24px;
+    top: -10px;
+    font-size: 19px;
    
      opacity: 0.9;
 }
@@ -5617,7 +5617,6 @@ color:#646464;
 
     display: flex;
 flex-wrap: wrap;
-justify-content: center;
 margin: 0 -26px;
   }
 
@@ -5740,6 +5739,9 @@ float: left;
  width:150px; 
 height:20.5px; 
 margin-left: 100px;
+margin-top: 10px;
+width: 135px;
+height: 19px;
 }
 
 .main-co2{
@@ -6412,19 +6414,103 @@ form#commentform div.social-networks{
 .container{
 	padding: 0 14px !important;
 }
+
+.logo-sec .blog{
+top: 5px;
+font-size: 18px; 
+}
+
+.logo-sec .slash{
+	font-size: 18px;
+	top: 8px;
+}
+.menu{
+	position: absolute;
+    cursor: pointer;
+    right: 14px;
+    top: 34px;
+}
 .menu-btn{
    width: 21.5px;
   height: 2.7px;
   background-color: #000000;
-  margin: 4.1px 0;
-  
-}
+  margin: 4.1px 0;}
+
 .menu-btn{
       display: inherit;
-    position: relative;
-    top: -47px;
-    left: 94%;
+    border-radius: 3px;
 }
+
+.outer-nav.oppenned {
+    display: block;
+    }
+
+.outer-nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: url(../img/cross.svg), auto;
+}
+.outer-nav ul.anim {
+    transform: translateX(0);
+}
+.outer-nav .nav {
+    cursor: auto;
+}
+
+.outer-nav ul {
+    transform: translateX(100%);
+    transition: 200ms ease all;
+}
+.nav {
+    padding-left: 20px;
+    margin: 0;
+    float: left;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    padding: 20px 0 320px 0px;
+    width: 275px;
+}
+ .nav > li {
+    display: block;
+    width: 100%;
+    }
+ .nav > li {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.show-xs {
+    display: block !important;
+}
+.nav > li > a {
+    text-align: right;
+    display: block;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: Roboto;
+    line-height: 1.18;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    position: relative;
+    font-weight: 500;
+    width: 100%;
+}
+
+
+
+
+
+
 .title {
   font-size: 36px;
   margin-top: 0;
@@ -6436,13 +6522,14 @@ form#commentform div.social-networks{
 }
 .boxed{
   margin-top: 10px;
-  display: inline-block;
+display: inline-block;
 }
 
 .boxed-left-side{
   float: initial;
   width: 100%;
   min-width: 0;
+  height: 300px;
 }
 
 

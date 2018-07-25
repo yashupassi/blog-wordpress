@@ -27,21 +27,25 @@
                     <form class="myform" action="email/mail.php" novalidate="">
                     <div class="refer-ori">
                         <p class="form-lead">Refer Dockabl
-                            <span style="margin-right: -5px;">Someone who might benefit from using this awesome product!</span> </p>
-                          <div class="form-element">
+                            <span style="margin-right: -5px;">Someone who might benefit from using this awesome product!</span> 
+                        </p>
+                        <div class="form-element">
                             <input type="email" class="input parsley-error" id="refer-email" name="refer-email" required="" data-parsley-id="17">
-                            <label for="refer-email"> Email Address</label>
-                          </div>
+                            <label for="refer-email">
+                               Email Address
+                            </label>
+                        </div>
                            <!--                        <p class="validate-msg " ></p>-->
-                          <input type="hidden" name="type" value="refer">
-                          <input type="submit" class="btn btn-submit" value="Send Invite">
+                        <input type="hidden" name="type" value="refer">
+                        <input type="submit" class="btn btn-submit" value="Send Invite">
                     </div>
-
-
-                </div>
+                  </div>
               </div>
             </div>
         </div>
+
+
+                
 
 
 
@@ -288,6 +292,54 @@ function copyTextFun() {
   
 }
 </script>
+
+
+<div class="outer-nav oppenned" id="mobile-nav">
+  <ul class="nav anim">
+    <li class=""><a href="//www.dockabl.com/features">Features</a></li>
+    <li class="show-xs fullscreen_vid"><a href="javascript:void(0)" onclick="showPopup('main-video')">Watch Video</a></li>
+    <li class="show-xs"><a href="javascript:void(0)" onclick="showPopup('mobile-rqst-demo')">Request Demo</a></li>
+    <li class=""><a href="//www.dockabl.com/contact">Contact</a></li>
+    <li><a href="javascript:void(0)" onclick="showPopup('refer')">Refer us</a></li>
+    <li class=""><a href="//www.dockabl.com/team">Team</a></li>
+  </ul>
+</div>
+
+
+
+<script>
+  var modal = jQuery('#mobile-nav');
+  modal.hide();
+
+var btn = jQuery("#my-menu");
+
+
+btn.click( function() { 
+    modal.css("display", "flex")
+    jQuery("body").addClass("overflow");
+});
+
+jQuery(window).click( function(event) { 
+
+  console.log( event )
+     if (event.target == modal) {
+        
+        modal.css("display", "none")
+        jQuery("body").removeClass("overflow");
+
+    }
+});
+
+ 
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//         jQuery("body").removeClass("overflow");
+
+//     }
+// }
+</script>
+
 
 
 

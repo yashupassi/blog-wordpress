@@ -18,22 +18,25 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-	<div class="container_header">
-		
-	
-   <header >
-    <span class="logo-sec">
-                 <a href="//www.dockabl.com/"> <img src="/wp-content/uploads/2018/07/logo.png"></a>
-           <b class="slash">|</b>
-           <span class="ClanOT-Book blog">BLOG</span>
-</span>
-           <a href="//www.dockabl.com/#main-home">  <button class="btn">Request Demo</button></a>
-           <div class="menu-btn"></div>
-           <div class="menu-btn"></div>
-           <div class="menu-btn" style="height: 3px"></div>
+  <div class="container_header">
+		<header >
+      <span class="logo-sec">
+        <a href="//www.dockabl.com/"> 
+          <img src="/wp-content/uploads/2018/07/logo.png">
+        </a>
+        <b class="slash">|</b>
+        <span class="ClanOT-Book blog">
+          BLOG
+        </span>
+      </span>
+      <a href="//www.dockabl.com/#main-home">  
+        <button class="btn">Request Demo</button>
+      </a>
+      <a  class="menu" id="my-menu">
+        <div class="menu-btn"></div>
+        <div class="menu-btn"></div>
+        <div class="menu-btn"></div>
+      </a>
 		</header>
-
-	 
-	</div>
+  </div>
 	

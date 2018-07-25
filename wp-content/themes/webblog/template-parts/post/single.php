@@ -6,9 +6,10 @@
  */
 
 ?>
-<div class="back ClanOT-Book container_header">
+<div class="container2">
+    <div class="back ClanOT-Book container_header">
         <a href=<?php echo get_site_url()?> >  < Back to all Insights</a>
-   </div>
+    </div>
 <div>
 	<div class="main-img">
         <img src=<?php the_post_thumbnail_url( 'full' );?>>
