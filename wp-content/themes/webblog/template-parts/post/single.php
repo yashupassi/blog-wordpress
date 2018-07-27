@@ -9,19 +9,30 @@
 
 
 
-
 <div class="container2">
     <div class="back ClanOT-Book container_header">
         <a href=<?php echo get_site_url()?> ><img src="<?php echo get_template_directory_uri(); ?>/assets/images/back_blog_btn.png"> Back to all Insights</a>
     </div>
 <div>
 	<div class="main-img">
+     
         <img src=<?php the_post_thumbnail_url( 'full' );?>>
    </div>
 </div>
 
 
-<div class="box">
+
+
+
+<div class="box pos-rel">
+<?php 
+  if( wpse110867_is_latest_post(  get_the_ID()    ) ){  
+    echo '<div class="latest-insight ClanOT-News"> <p>Latest Insight</p> </div>';
+  } 
+?>
+  
+
+
 	<div>
   		<div class="side-buttons">
     		<ul>
