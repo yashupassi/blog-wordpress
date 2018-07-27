@@ -76,13 +76,13 @@
       <div class="main-co2" >
         <div>
         <div style="color: white">
-         <a href="//www.dockabl.com/features#slide_1" class="objectives ClanOT-Bold "> Objectives</a>
+         <a href="//www.dockabl.com/features#slide_1" class="objectives ClanOT-Bold " target="_blank"> Objectives</a>
         </div><div style="color: white" style="margin-top: 10px">
-          <a href="//www.dockabl.com/features#slide_2" class="ClanOT-Bold objectives"> Reviews</a>
+          <a href="//www.dockabl.com/features#slide_2" class="ClanOT-Bold objectives" target="_blank"> Reviews</a>
         </div>
         <div style="color: white">
          
-         <a href="//www.dockabl.com/features#slide_3" class="ClanOT-Bold objectives">   Recognition</a>
+         <a href="//www.dockabl.com/features#slide_3" class="ClanOT-Bold objectives" target="_blank">   Recognition</a>
         </div>
       </div>
         
@@ -90,9 +90,9 @@
 <div class="main-co3">
         <div>
           <div style="color: white">
-          <a href="//www.dockabl.com/team" class="request-demo ClanOT-Book">Team</a>
+          <a href="//www.dockabl.com/team" class="request-demo ClanOT-Book" target="_blank">Team</a>
         </div><div style="color: white">
-          <a href="//www.dockabl.com/contact" class="request-demo ClanOT-Book">Contact us</a>
+          <a href="//www.dockabl.com/contact" class="request-demo ClanOT-Book"target="_blank">Contact us</a>
         </div>
         
         <div style="color: white">
@@ -288,7 +288,7 @@ function copyTextFun() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   document.execCommand("copy");
-  alert("url copied")
+  alert("Your link is ready to be used")
   
 }
 </script>

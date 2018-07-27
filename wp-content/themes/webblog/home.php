@@ -47,17 +47,20 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
     		$post = get_post( get_the_ID() );
 
     		// var_dump($post);
-
-    		echo '<div class="boxed">
+              
+    		echo '<div class="latest-insight ClanOT-News">
+            <p>Latest Insight</p>
+            </div>
+        <div class="boxed">
             <div class="boxed-left-side"> 
                <a href="?p='. $post->ID .'"><img src='.get_the_post_thumbnail_url($post).'>
                </a>
                
             </div>
-            <div class="boxed-right-side ClanOT-Medium">'
-             .  custom_echo( $post->post_title , 100) . 
+            <div class="boxed-right-side ClanOT-Medium"><a href="?p='. $post->ID .'">'
+             .  custom_echo( $post->post_title , 100) . '</a>'.
                '<p class="ClanOT-Book">'
-               .  custom_echo( $post->post_content , 500) . '<a href="?p='. $post->ID .'" class="ClanOT-News"> <b>Read more</b></a>'.
+               .  custom_echo( $post->post_content , 600) . '<a href="?p='. $post->ID .'" class="ClanOT-News"> <b>Read more</b></a>'.
                '</p>
                <div class="flex">
                   <span class="boxed-date ClanOT-News">'
@@ -90,8 +93,8 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
                   <div>
                      <a href="?p='. $post->ID .'" ><img src='.get_the_post_thumbnail_url($post).' style="width:100%" class="post-img"></a>
                      <div class="info">
-                        <h1 class="ClanOT-Medium"><b>'
-                        . custom_echo( $post->post_title , 50) .
+                        <h1 class="ClanOT-Medium"><b><a href="?p='. $post->ID .'">'
+             .  custom_echo( $post->post_title , 100) . '</a>'.
                            '</b>
                         </h1>
                         <p class="ClanOT-Book">'

@@ -21,7 +21,7 @@
   <div class="container_header">
 		<header >
       <span class="logo-sec">
-        <a href="//www.dockabl.com/"> 
+        <a href="//www.dockabl.com/"  target="_blank"> 
           <img src="/wp-content/uploads/2018/07/logo.png">
         </a>
         <b class="slash">|</b>
@@ -29,8 +29,8 @@
           BLOG
         </span>
       </span>
-      <a href="//www.dockabl.com/#main-home">  
-        <button class="btn">Request Demo</button>
+      <a href="//www.dockabl.com/#main-home" target="_blank">  
+        <button class="btn" >Request Demo</button>
       </a>
       <a  class="menu" id="my-menu">
         <div class="menu-btn"></div>
