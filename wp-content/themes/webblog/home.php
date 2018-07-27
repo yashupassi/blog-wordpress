@@ -94,7 +94,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
                      <a href="?p='. $post->ID .'" ><img src='.get_the_post_thumbnail_url($post).' style="width:100%" class="post-img"></a>
                      <div class="info">
                         <h1 class="ClanOT-Medium"><b><a href="?p='. $post->ID .'">'
-             .  custom_echo( $post->post_title , 100) . '</a>'.
+             .  custom_echo( $post->post_title , 50) . '</a>'.
                            '</b>
                         </h1>
                         <p class="ClanOT-Book">'
