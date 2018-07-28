@@ -25,8 +25,9 @@
         <a href="//www.dockabl.com/"  target="_blank"> 
           <img src="/wp-content/uploads/2018/07/logo.png">
         </a>
-        <span class="ClanOT-Book blog">
+        <span class="ClanOT-Book blog"><a href="//blog.dockabl.in">
           BLOG
+        </a>
         </span>
       </span>
       <a href="//www.dockabl.com/#main-home" class="btn" target="_blank">  

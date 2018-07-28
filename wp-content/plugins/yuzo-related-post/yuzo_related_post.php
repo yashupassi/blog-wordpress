@@ -999,7 +999,7 @@ function create_post_related( $content = '' ){
 					  $style="<style>
 								.yuzo_related_post img{width:".$width."px !important; height:{$height}px !important;}
 								.yuzo_related_post .relatedthumb{line-height:".((int)$yuzo_options->font_size +2 )."px;background:{$yuzo_options->bg_color->color} !important;color:{$css_text_color}!important;}
-								.yuzo_related_post .relatedthumb:hover{background:{$yuzo_options->bg_color->hover} !important;$css_transitions;color:{$css_text_color_hover}!important;}
+								.yuzo_related_post .relatedthumb:hover{background:{$yuzo_options->bg_color->hover} ;$css_transitions;color:{$css_text_color_hover}!important;}
 								.yuzo_related_post .relatedthumb a{color:{$css_title_color}!important;}
 								.yuzo_related_post .relatedthumb a:hover{ color:$css_title_color_hover}!important;}
 								.yuzo_related_post .relatedthumb:hover a{ color:{$css_title_color_hover}!important;}

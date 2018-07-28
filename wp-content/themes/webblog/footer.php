@@ -144,16 +144,16 @@
 
         <div>
             <ul class="quick-links f-main-links">
-                <li><a href="www.dockabl.com/features#slide_1">Objectives</a></li>
-                <li><a href="www.dockabl.com/features#slide_2">Reviews</a></li>
-                <li><a href="www.dockabl.com/features#slide_3">Recognition</a></li>
+                <li><a href="//www.dockabl.com/features#slide_1" target="_blank">Objectives</a></li>
+                <li><a href="//www.dockabl.com/features#slide_2" target="_blank">Reviews</a></li>
+                <li><a href="//www.dockabl.com/features#slide_3" target="_blank">Recognition</a></li>
             </ul>
         </div>
         <div>
             <ul class="quick-links">
-                <li class="hide-xs"><a href="www.dockabl.com/index#main-home">Request Demo</a></li>
-                <li><a href="www.dockabl.com/contact">Contact</a></li>
-                <li class="show-xs"><a href="www.dockabl.com/team">Team</a></li>
+                <li class="hide-xs"><a href="//www.dockabl.com/index#main-home" target="_blank">Request Demo</a></li>
+                <li><a href="//www.dockabl.com/contact" target="_blank">Contact</a></li>
+                <li class="show-xs"><a href="//www.dockabl.com/team" target="_blank">Team</a></li>
             </ul>
         </div>
     </div>
@@ -171,7 +171,7 @@
 
                   <div class="text-center">
                       <input type="hidden" name="type" value="stay-updated">
-                      <input type="submit" class="btn btn-black" value="Submit">
+                      <input type="submit" class="btn-2 btn-black" value="Submit">
                   </div>
               </div>
 
