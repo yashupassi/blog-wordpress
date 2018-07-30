@@ -317,7 +317,7 @@ if($back_to_top_type == 'enable'): ?>
 
 
 <div class="outer-popup" id="mypopup">
-        <div class="popup" >
+        <div class="popup" onclick=" event.stopPropagation()">
           <div class="close-btn" id="closeBtn">&times;
           </div>
           <div class="popup-left">
@@ -355,26 +355,7 @@ if($back_to_top_type == 'enable'): ?>
 
 
 
-<!-- #script -->
 
-<script>
-  var modal = document.getElementById('mypopup');
-var btn = document.getElementById("myBtn");
-var closeBtn = document.getElementById("closeBtn");
-btn.onclick = function() {
-    modal.style.display = "flex";
-}
-closeBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-
-    }
-}
-</script>
 
 
  
@@ -475,7 +456,7 @@ function copyTextFun() {
 
 
 <div class="outer-nav oppenned" id="mobile-nav">
-  <ul class="nav anim">
+  <ul class="nav anim" onclick=" event.stopPropagation()">
     <li class=""><a href="//www.dockabl.com/features">Features</a></li>
     <li class="show-xs fullscreen_vid"><a href="javascript:void(0)" onclick="showPopup('main-video')">Watch Video</a></li>
     <li class="show-xs"><a href="javascript:void(0)" onclick="showPopup('mobile-rqst-demo')">Request Demo</a></li>
@@ -488,39 +469,114 @@ function copyTextFun() {
 
 
 <script>
-  var modal = jQuery('#mobile-nav');
-  modal.hide();
+var modalNav = jQuery('#mobile-nav');
+modalNav.hide();
 
-var btn = jQuery("#my-menu");
+var btnNav = jQuery("#my-menu");
 
 
-btn.click( function() { 
-    modal.css("display", "flex")
+btnNav.click( function() { 
+    modalNav.css("display", "flex")
     jQuery("body").addClass("overflow");
 });
 
-jQuery(window).click( function(event) { 
-
-  console.log( event )
-     if (event.target == modal) {
-        
-        modal.css("display", "none")
-        jQuery("body").removeClass("overflow");
-
-    }
-});
+modalNav.click(function() {
+   jQuery(this).css("display", "none");
+   jQuery("body").removeClass("overflow");
+})
 
  
-// window.onclick = function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//         jQuery("body").removeClass("overflow");
+</script>
 
-//     }
-// }
+<script>
+ 
+ 
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = jQuery('.heade_div').outerHeight();
+
+jQuery(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = jQuery(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        jQuery('.heade_div').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + jQuery(window).height() < jQuery(document).height()) {
+            jQuery('.heade_div').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 </script>
 
 
+
+
+
+<!-- #script -->
+
+<script>
+  var modalSingup = jQuery('#mypopup');
+var btnSingup = jQuery("#myBtn");
+var closeBtnSingup = jQuery("#closeBtn");
+ 
+btnSingup.click(function () {
+    modalSingup.css("display","flex");
+})
+
+closeBtnSingup.click(function () {
+   modalSingup.css("display","none");
+})
+
+
+modalSingup.click(function () {
+   jQuery(this).css("display","none");
+})
+
+
+
+/*
+  var modal = document.getElementById('mypopup');
+var btn = document.getElementById("myBtn");
+var closeBtn = document.getElementById("closeBtn");
+btn.onclick = function() {
+    modal.css("display","flex");
+}
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+
+    }
+}
+*/
+</script>
 
 
 

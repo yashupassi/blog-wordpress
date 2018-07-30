@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="container_header">
+  <div class="header_div">
 		<header >
       <span class="logo-sec">
         <a href="//www.dockabl.com/"  target="_blank"> 

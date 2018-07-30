@@ -2241,6 +2241,12 @@ function comment_form( $args = array(), $post_id = null ) {
 		'</div>
 		<textarea id="comment" required="required" name="comment" placeholder="Add a Comment..." class="txt-area ClanOT-Book" ></textarea> </div></p>',
 		/** This filter is documented in wp-includes/link-template.php */
+		'must_log_in'          => '<p class="must-log-in">' . sprintf(
+		                              /* translators: %s: login URL */
+		                              __( 'You must be <a href="%s">logged in</a> to post a comment.' ),
+		                              wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ), $post_id ) )
+		                          ) . '</p>',
+		/** This filter is documented in wp-includes/link-template.php */
 		'logged_in_as'         => '<p class="logged-in-as">' . sprintf(
 		                              /* translators: 1: edit user link, 2: accessibility text, 3: user name, 4: logout URL */
 		                              __( '<a href="%1$s" aria-label="%2$s"  class="login">Logged in as %3$s</a>. <a href="%4$s" class="logout">Log out?</a>' ),
