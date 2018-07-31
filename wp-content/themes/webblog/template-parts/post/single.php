@@ -37,13 +37,13 @@
   		<div class="side-buttons">
     		<ul>
        			
-            <a class="fb"  href=<?php echo "//www.facebook.com/sharer/sharer.php?u=".get_site_url();?>  target="_blank">
+            <a class="fb"  href=<?php echo "//www.facebook.com/sharer/sharer.php?u=".get_permalink();?>  target="_blank">
        				<li style="margin-top: 10px"><i class="fa fa-facebook facebook-li" style="padding-left:14px"></i></li>
             </a>
-            <a class="twt" href=<?php echo "//twitter.com/home?status=".get_post_permalink();?>  target="_blank">
+            <a class="twt" href=<?php echo "//twitter.com/home?status=".get_permalink();?>  target="_blank">
        				<li><i class="fa fa-twitter"style="padding-left:11px"></i></li>
             </a>
-            <a class="link" href=<?php echo "//www.linkedin.com/shareArticle?mini=true&title=&summary=&source=&url=".get_post_permalink();?> target="_blank">
+            <a class="link" href=<?php echo "//www.linkedin.com/shareArticle?mini=true&title=&summary=&source=&url=".get_permalink();?> target="_blank">
        				<li><i class="fa fa-linkedin"style="padding-left:11px"></i></li>
             </a>
             <a class="copy" onclick="copyTextFun()">
