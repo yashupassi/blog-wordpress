@@ -122,7 +122,7 @@
         </div>
         <div>
             <ul class="quick-links">
-                <li ><a href="//www.dockabl.com/index#main-home" target="_blank">Team</a></li>
+                <li ><a href="//www.dockabl.com/team" target="_blank">Team</a></li>
                 <li><a href="//www.dockabl.com/contact" target="_blank">Contact</a></li>
                 <li class=""><a href="javascript:void(0)" onclick="showPopup('refer')">Refer Us</a></li>
             </ul>

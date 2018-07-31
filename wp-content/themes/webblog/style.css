@@ -6905,7 +6905,7 @@ footer{
 }
 .logo-sec {
 
-        margin-left: 0;
+        margin-left: 10;
 
 }
 
@@ -7869,6 +7869,9 @@ footer .stay-updated input{
 footer .stay-updated p{
 	font-family: Roboto;
 	font-weight: 300;
+}
+.rqst-demo-mobile{
+	display: block !important;
 }
 
 }
