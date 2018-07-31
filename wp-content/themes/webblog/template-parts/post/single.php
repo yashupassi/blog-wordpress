@@ -37,7 +37,7 @@
   		<div class="side-buttons">
     		<ul>
        			
-            <a class="fb"  href=<?php echo "//www.facebook.com/sharer/sharer.php?u=".get_post_permalink();?>  target="_blank">
+            <a class="fb"  href=<?php echo "//www.facebook.com/sharer/sharer.php?u=".get_site_url();?>  target="_blank">
        				<li style="margin-top: 10px"><i class="fa fa-facebook facebook-li" style="padding-left:14px"></i></li>
             </a>
             <a class="twt" href=<?php echo "//twitter.com/home?status=".get_post_permalink();?>  target="_blank">
