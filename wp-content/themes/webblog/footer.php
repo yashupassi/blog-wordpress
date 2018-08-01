@@ -1012,8 +1012,8 @@ window.onclick = function(event) {
 </script>
 <script type="text/javascript">
   jQuery(document).on('scroll', function() {
-  var btn = jQuery('.misha_comment_loadmore');
-  if( (jQuery(this).scrollTop() + jQuery(window).height() ) >= btn.offset().top){
+  var button = jQuery('.misha_comment_loadmore');
+  if( (jQuery(this).scrollTop() + jQuery(window).height() ) >= button.offset().top){
  
     // check if the ajax request isn't in process right now
     if( button.text() == ' SHOW MORE COMMENTS' ) {
