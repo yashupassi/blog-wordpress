@@ -7858,6 +7858,31 @@ footer .stay-updated p{
 	font-family: Roboto;
 	 font-weight: 300;
 }
+.btn-load {
+    color: white;
+    border: none;
+    padding: 13px 29px;
+    margin: 78px auto;
+    display: block;
+    border-radius: 102.7px;
+    background-color: #c0c0c0;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-transform: none;
+    margin: 0 auto;
+    max-width: 1305px;
+    float: none;
+    outline: none;
+}
+.misha_comment_loadmore{
+	    border-bottom: solid 1px #9b9b9b;
+    padding-bottom: 10px;
+    margin-top: -22px;
+    padding-left: 35%;
+    cursor: pointer;
+}
 @media only screen and (max-width: 767px){
 	nav .nav { 
     display: block;

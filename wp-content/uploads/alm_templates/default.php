@@ -1,6 +1,19 @@
-<li <?php if (!has_post_thumbnail()) { ?> class="no-img"<?php } ?>>
-   <?php if ( has_post_thumbnail() ) { the_post_thumbnail('alm-thumbnail'); }?>
-   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-   <p class="entry-meta"><?php the_time("F d, Y"); ?></p>
-   <?php the_excerpt(); ?>
-</li>
+<div class="column">
+                  <div>
+                  <?php $post= get_post( get_the_ID() ); ?>
+                     <a href="?p='. $post->ID .'" ><img src=<?php the_post_thumbnail_url($post);?> style="width:100%" class="post-img"></a>
+                     <div class="info">
+                        <h1 class="ClanOT-Medium"><b><a href="?p=<?php echo get_the_ID();?>">
+             <?php $title  = get_the_title();$title = strip_tags($title);echo substr($title, 0, 50); ?></a></b>
+                        </h1>
+                        <p class="ClanOT-Book">
+                        <?php $content = get_the_content();$content = strip_tags($content);echo substr($content, 0, 200); ?><a href="?p=<?php echo get_the_ID(); ?>" class="ClanOT-News"> <b>Read more</b></a>
+                        </p>
+                     </div>
+                     <div class="flex date-cmnt" style="margin-top:-15px">
+                     <span class="left-side ClanOT-News" ><?php the_time("F j, Y"); ?></span>
+                        <span class="right-side ClanOT-News"><?php comments_number( '0 Comment', '1 Comment', '% Comments' ); ?></span>
+                        </div>
+                      
+                  </div>
+               </div>

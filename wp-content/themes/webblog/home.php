@@ -115,6 +115,8 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
     <?php endwhile; ?>
     <!-- end of the loop -->
 
+    
+
 <?php echo'<div class="clearfix"></div> '?>
  
  
@@ -125,7 +127,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 <?php endif; ?> 
 
          
-
+<?php echo do_shortcode('[ajax_load_more post_type="post" scroll="false" posts_per_page="3" button_label="Load more articles"]'); ?>
 
 <?php echo'</div> '?>
 

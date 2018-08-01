@@ -460,3 +460,31 @@ function wpse110867_is_latest_post( $post_id, $query_args = array() ){
 
       return $latest_post_id == $post_id;
   }
+  add_action( 'wp_enqueue_scripts', 'for_those_who_have_no_idea_what_we_are_doing_here', 1 );
+ 
+function for_those_who_have_no_idea_what_we_are_doing_here() {
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'footer', get_stylesheet_directory_uri() . '/footer.php', array('jquery') );
+ 
+}
+add_action('wp_ajax_cloadmore', 'misha_comments_loadmore_handler'); // wp_ajax_{action}
+add_action('wp_ajax_nopriv_cloadmore', 'misha_comments_loadmore_handler'); // wp_ajax_nopriv_{action}
+ 
+function misha_comments_loadmore_handler(){
+ 
+	// maybe it isn't the best way to declare global $post variable, but it is simple and works perfectly!
+	global $post;
+	$post = get_post( $_POST['post_id'] );
+	setup_postdata( $post );
+ 
+	// actually we must copy the params from wp_list_comments() used in our theme
+	wp_list_comments( array(
+		'avatar_size' => 100,
+		'page' => $_POST['cpage'], // current comment page
+		'per_page' => get_option('comments_per_page'),
+		'style' => 'ol', // comments won't wrapped in this tag and it is awesome!
+		'short_ping' => true,
+		
+	) );
+	die; // don't forget this thing if you don't want "0" to be displayed
+}

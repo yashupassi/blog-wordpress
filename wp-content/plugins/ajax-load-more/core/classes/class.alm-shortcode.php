@@ -795,7 +795,7 @@ if( !class_exists('ALM_SHORTCODE') ):
    	         $btn_rel = ' rel="next"';
 	         }	         
 	         
-	         $html .= '<'. $btn_element .' class="alm-load-more-btn more'. $button_classname .'"'. $btn_href . $btn_rel .'>'. $button_label .'</'. $btn_element .'>';
+	         $html .= '<'. $btn_element .' class="alm-load-more-btn more btn-load'. $button_classname .'" align:center'. $btn_href . $btn_rel .'>'. $button_label .'</'. $btn_element .'>';
 	         
          }	         
          

@@ -54,14 +54,12 @@ if ( post_password_required() ) {
 				) );
 			?>
 		</ol>
-		<!--  <div class="paginate-comments ClanOT-Book">
-		<?php paginate_comments_links(array('prev_text' => '&laquo; PREV', 'next_text' => 'NEXT &raquo;'));?>
-   		</div> -->
-		<?php 
-  			// $comment_count = get_comments_number();
- 			if( $comment_count > 5){
-			echo '<div class="paginate-comments ClanOT-Book">';
- 				paginate_comments_links(array('prev_text' => '&laquo; PREV', 'next_text' => 'NEXT &raquo;'));
-			echo' </div>';}
-		?>
+		<?php $cpage = get_query_var('cpage') ? get_query_var('cpage') : 1;
+ 
+if( $cpage > 1 ) {
+	echo '<div class="misha_comment_loadmore"> SHOW MORE COMMENTS</div>
+	<script>
+	var ajaxurl = \'' . site_url('wp-admin/admin-ajax.php') . '\',parent_post_id = ' . get_the_ID() . ',cpage = ' . $cpage . '</script>';
+}?>
+		
 	</div><!-- #comments -->
