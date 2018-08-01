@@ -87,25 +87,25 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
     		$count++;
     		$post = get_post( get_the_ID() ); 
         if($count!=1){
-    		echo ' <div class="column">
-                  <div>
-                     <a href="?p='. $post->ID .'" ><img src='.get_the_post_thumbnail_url($post).' style="width:100%" class="post-img"></a>
-                     <div class="info">
-                        <h1 class="ClanOT-Medium"><b><a href="?p='. $post->ID .'">'
-             .  custom_echo( $post->post_title , 50) . '</a>'.
-                           '</b>
-                        </h1>
-                        <p class="ClanOT-Book">'
-                        . custom_echo( $post->post_content , 200) . '<a href="?p='. $post->ID .'" class="ClanOT-News"> <b>Read more</b></a>'.
-                        '</p>
-                     </div>
-                     <div class="flex date-cmnt" style="margin-top:-15px">
-                     <span class="left-side ClanOT-News" >'.date('F j, Y',strtotime($post->post_date)).'</span>
-                        <span class="right-side ClanOT-News">'.$post->comment_count.' Comments'.'</span>
-                        </div>
+    		// echo ' <div class="column">
+      //             <div>
+      //                <a href="?p='. $post->ID .'" ><img src='.get_the_post_thumbnail_url($post).' style="width:100%" class="post-img"></a>
+      //                <div class="info">
+      //                   <h1 class="ClanOT-Medium"><b><a href="?p='. $post->ID .'">'
+      //        .  custom_echo( $post->post_title , 50) . '</a>'.
+      //                      '</b>
+      //                   </h1>
+      //                   <p class="ClanOT-Book">'
+      //                   . custom_echo( $post->post_content , 200) . '<a href="?p='. $post->ID .'" class="ClanOT-News"> <b>Read more</b></a>'.
+      //                   '</p>
+      //                </div>
+      //                <div class="flex date-cmnt" style="margin-top:-15px">
+      //                <span class="left-side ClanOT-News" >'.date('F j, Y',strtotime($post->post_date)).'</span>
+      //                   <span class="right-side ClanOT-News">'.$post->comment_count.' Comments'.'</span>
+      //                   </div>
                       
-                  </div>
-               </div> '; 
+      //             </div>
+      //          </div> '; 
              }
 
              if($count>6){

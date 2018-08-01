@@ -7859,22 +7859,22 @@ footer .stay-updated p{
 	 font-weight: 300;
 }
 .btn-load {
-    color: white;
-    border: none;
-    padding: 13px 29px;
-    margin: 78px auto;
-    display: block;
-    border-radius: 102.7px;
-    background-color: #c0c0c0;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    padding-left: 29px;
-    padding-right: 29px;
-    text-transform: none;
-    margin: 0 auto;
-    max-width: 1305px;
-    float: none;
-    outline: none;
+    color: white !important;
+    border: none !important;
+    padding: 13px 29px !important;
+    margin: 78px auto !important;
+    display: block !important;
+    border-radius: 102.7px !important;
+    background-color: #c0c0c0 !important;
+    padding-top: 15px !important;
+    padding-bottom: 30px !important;
+    padding-left: 29px !important;
+    padding-right: 29px !important;
+    text-transform: none !important;
+    margin: 0 auto !important;
+    max-width: 1305px !important;
+    float: none !important;
+    outline: none !important;
 }
 .misha_comment_loadmore{
 	    border-bottom: solid 1px #9b9b9b;
