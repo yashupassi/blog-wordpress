@@ -57,7 +57,7 @@ if ( post_password_required() ) {
 		<?php $cpage = get_query_var('cpage') ? get_query_var('cpage') : 1;
  
 if( $cpage > 1 ) {
-	echo '<div class="misha_comment_loadmore"> SHOW MORE COMMENTS</div>
+	echo '<div class="misha_comment_loadmore ClanOT-Book"> SHOW MORE COMMENTS</div>
 	<script>
 	var ajaxurl = \'' . site_url('wp-admin/admin-ajax.php') . '\',parent_post_id = ' . get_the_ID() . ',cpage = ' . $cpage . '</script>';
 }?>
