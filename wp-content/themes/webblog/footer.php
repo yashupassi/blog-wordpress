@@ -355,7 +355,7 @@ function copyTextFun() {
 }
 </script>
 
-<nav>
+<nav style="padding: 0">
 <div class="outer-nav" id="mobile-nav">
   <ul class="nav">
     <li class=""><a href="//www.dockabl.com/features">Features</a></li>
@@ -487,7 +487,7 @@ window.onclick = function(event) {
 
 
 
-<a href="javascript:void(0)" class="rqst-demo-mobile show-xs" onclick="showPopup('mobile-rqst-demo')" >Request Demo</a>
+<!-- <a href="javascript:void(0)" class="rqst-demo-mobile show-xs" onclick="showPopup('mobile-rqst-demo')" >Request Demo</a> -->
 
 
 <div class="newmodal " datapop="mobile-rqst-demo">
