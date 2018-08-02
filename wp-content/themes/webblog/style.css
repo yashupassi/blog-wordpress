@@ -6257,6 +6257,7 @@ width: 400px;
   border-radius: 3px;
   background-color: #ffffff;
   border: solid 1px #dcdcdc;
+  min-height: 615px;
 }
 .post-img{
 	object-fit: cover;
@@ -7859,13 +7860,12 @@ footer .stay-updated p{
 	 font-weight: 300;
 }
 .btn-load {
-    color: white !important;
-    border: none !important;
+    color: #334FFA !important;
     padding: 13px 29px !important;
     margin: 78px auto !important;
     display: block !important;
     border-radius: 102.7px !important;
-    background-color: #c0c0c0 !important;
+    background-color: #fff !important;
     padding-top: 0px !important;
     padding-bottom: 30px !important;
     padding-left: 29px !important;
@@ -7875,9 +7875,7 @@ footer .stay-updated p{
     max-width: 1305px !important;
     float: none !important;
     outline: none !important;
-    font-size: 16px !important;
-    font-family: Roboto !important;
-    font-weight: normal !important;
+    border: solid 1px #334FFA !important;
 }
 .misha_comment_loadmore{
 	border-bottom: solid 1px #9b9b9b;
@@ -7929,4 +7927,48 @@ footer .stay-updated p{
 }
 
 }
+header{
+    position: static;
+}
+
+
+.info { 
+    min-height: 270px;
+}
+
+
+@media(max-width: 600px){
+        .popup {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            border-radius: 0px;
+        }
+        .popup-left, .popup-right {
+            padding: 20px 15px;
+            float: left;
+            width: 100%;
+        }
+
+        .apsl-icon-block {
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 10px 20px !important;
+            height: 45px !important;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup .social-btn{
+            padding: 0;
+            float: left;
+            margin: 0;
+        }
+
+        .log-form-group .btn-rectangle {
+            padding: 14px !important;
+            height: 45px;
+        }
+    }
 
