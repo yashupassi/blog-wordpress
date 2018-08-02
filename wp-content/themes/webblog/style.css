@@ -6059,11 +6059,11 @@ width: 100%;
 }
 
 .owl-prev{
-	left: -40px !important;
+	left: -25px !important;
 }
 
 .owl-next{
-	right: 0px !important;
+	right: -25px !important;
 }
 
 .owl-nav button{

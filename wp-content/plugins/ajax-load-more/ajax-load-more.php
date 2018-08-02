@@ -433,7 +433,8 @@ if( !class_exists('AjaxLoadMore') ):
    		$sticky = (isset($_GET['sticky_posts'])) ? $_GET['sticky_posts'] : '';
    		$sticky = ($sticky === 'true') ? true : false;
    		$post__in = (isset($_GET['post__in'])) ? $_GET['post__in'] : '';
-   		$post__not_in = (isset($_GET['post__not_in'])) ? $_GET['post__not_in'] : '';
+   		
+         $post__not_in = (isset($_GET['post__not_in'])) ? $_GET['post__not_in'] : '' ;
    		$exclude = (isset($_GET['exclude'])) ? $_GET['exclude'] : '';
    		$offset = (isset($_GET['offset'])) ? $_GET['offset'] : 0;
    		$post_status = $_GET['post_status'];
@@ -640,6 +641,10 @@ if( !class_exists('AjaxLoadMore') ):
    			$post__not_in = explode(",",$post__not_in);
    			$args['post__not_in'] = $post__not_in;
    		}
+         $latest_post = get_posts("numberposts=1");
+         $latest_post_id = $latest_post[0]->ID;
+         $args['post__not_in'] = array($latest_post_id);
+
    		if(!empty($exclude)){ // Deprecate this soon - 2.8.5 */
    			$exclude = explode(",",$exclude);
    			$args['post__not_in'] = $exclude;
