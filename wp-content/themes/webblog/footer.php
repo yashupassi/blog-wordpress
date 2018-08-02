@@ -253,14 +253,6 @@ if($back_to_top_type == 'enable'): ?>
 
 
 
-
-
-
- 
-
-
-
-
 <script type="text/javascript">
   jQuery('.post-carousel').owlCarousel({
     loop:false,
