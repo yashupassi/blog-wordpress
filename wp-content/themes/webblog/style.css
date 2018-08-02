@@ -7875,9 +7875,12 @@ footer .stay-updated p{
     max-width: 1305px !important;
     float: none !important;
     outline: none !important;
+    font-size: 16px !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
 }
 .misha_comment_loadmore{
-	    border-bottom: solid 1px #9b9b9b;
+	border-bottom: solid 1px #9b9b9b;
     padding-bottom: 5px;
     margin-top: -22px;
     padding-left: 35%;
@@ -7886,6 +7889,10 @@ footer .stay-updated p{
 @media only screen and (max-width: 767px){
 	nav .nav { 
     display: block;
+
+}
+.misha_comment_loadmore{
+	padding-left: 25%;
 }
 nav{
 	font-family: Roboto;
