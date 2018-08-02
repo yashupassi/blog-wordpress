@@ -44,10 +44,12 @@
        				<li><i class="fa fa-twitter"style="padding-left:11px"></i></li>
             </a>
             <a class="link" href=<?php echo "//www.linkedin.com/shareArticle?mini=true&title=&summary=&source=&url=".get_permalink();?> target="_blank">
-       				<li><i class="fa fa-linkedin"style="padding-left:11px"></i></li>
+       				<li><i class="fa fa-linkedin"style="padding-left:11.5px"></i></li>
             </a>
             <a class="copy" onclick="copyTextFun()">
-        			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/copy_icon.png"></li>
+        			<li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/copy_icon.png">
+              <div id="snackbar">Your link is ready to be used</div>
+              </li>
        			</a>
     		</ul>
    		</div>

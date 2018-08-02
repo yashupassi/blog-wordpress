@@ -5074,7 +5074,7 @@ body{
 
 
 .btn:hover {
-    color: white;
+    color: white !important;
     background-color: #102686;
 cursor:pointer;
 }
@@ -5158,7 +5158,7 @@ padding: 60px 228px 52px 228px;
 
 .side-buttons li{
   list-style-type: none;
-transition: .6s;
+transition: 0s;
   position: relative;
   color: white;
   width: 40px;
@@ -6128,7 +6128,7 @@ display: none;
   font-size: 68px;
   line-height: 1.24;
   color: #000000;
-  padding-top: 40px;
+  padding-top: 20px;
   margin-left: -5px;
 }
 
@@ -6190,8 +6190,10 @@ width: 400px;
     height: 100%;
     position: absolute;
     width: 100%;
-    left:0;
+    left:-1px;
     top:0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
 
 }
@@ -7935,6 +7937,14 @@ header{
 .info { 
     min-height: 270px;
 }
+.link li{
+	padding-top:10px !important; 
+
+}
+.copy li{
+	padding-left: 1px !important;
+	padding-top:10px !important;
+}
 
 
 @media(max-width: 600px){
@@ -7972,3 +7982,45 @@ header{
         }
     }
 
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 11;
+    right: 40px;
+    top: 60px;
+    font-size: 17px;
+    max-width: 200px;
+}
+
+#snackbar.active-snack {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 60px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 60px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 60px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 60px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}

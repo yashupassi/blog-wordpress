@@ -339,7 +339,10 @@ function copyTextFun() {
   var copyText = document.getElementById("myInput");
   copyText.select();
   document.execCommand("copy");
-  alert("Your link is ready to be used")
+   var x = document.getElementById("snackbar");
+    x.className = "active-snack";
+    setTimeout(function(){ x.className = x.className.replace("c", ""); }, 3000);
+
   
 }
 </script>
@@ -961,56 +964,7 @@ window.onclick = function(event) {
 
 
 
-<script type="text/javascript">
-  jQuery(function(jQuery){
- 
-  // load more button click event
-  jQuery('.misha_comment_loadmore').click( function(){
-    var button = jQuery(this);
- 
-    // decrease the current comment page value
-    cpage--;
- 
-    jQuery.ajax({
-      url : ajaxurl, // AJAX handler, declared before
-      data : {
-        'action': 'cloadmore', // wp_ajax_cloadmore
-        'post_id': parent_post_id, // the current post
-        'cpage' : cpage, // current comment page
-      },
-      type : 'POST',
-      beforeSend : function ( xhr ) {
-        button.text('Loading...'); // preloader here
-      },
-      success : function( data ){
-        if( data ) {
-          jQuery('ol.comment-list').append( data );
-          button.text('SHOW MORE COMMENTS'); 
-           // if the last page, remove the button
-          if ( cpage == 1 )
-            button.remove();
-        } else {
-          button.remove();
-        }
-      }
-    });
-    return false;
-  });
- 
-});
-</script>
-<script type="text/javascript">
-  jQuery(document).on('scroll', function() {
-  var button = jQuery('.misha_comment_loadmore');
-  if( (jQuery(this).scrollTop() + jQuery(window).height() ) >= button.offset().top){
- 
-    // check if the ajax request isn't in process right now
-    if( button.text() == ' SHOW MORE COMMENTS' ) {
-      button.trigger('click'); // click the button
-    }
- 
-  }
-});</script>
+
 
 
 
