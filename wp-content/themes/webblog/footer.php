@@ -341,8 +341,8 @@ function copyTextFun() {
   document.execCommand("copy");
    var x = document.getElementById("snackbar");
     x.className = "active-snack";
-    setTimeout(function(){ x.className = x.className.replace("c", ""); }, 3000);
-
+    setTimeout(function(){ x.className = x.className.replace("active-snack", ""); }, 3000);
+    
   
 }
 </script>
