@@ -27,15 +27,15 @@ if ( post_password_required() ) {
         	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/cmnt_icon.png" class="chat-img">
         		<div class="cmnt ClanOT-News">
 					<?php
-						$comment_count = get_comments_number();
+						$comment_count = comments_number('0 Comments', '1 Comment', '% Comments');
 						if ( 1 === $comment_count ) {
 							printf(
 								/* translators: 1: title. */
 								esc_html__( ' &ldquo;%1$s&rdquo;', 'webblog' ),
-								'<span>' . Comments . '</span>'
+								'<span></span>'
 							);
 						} else {
-							echo $comment_count . " Comments";
+							echo $comment_count . " ";
 							
 						}
 					?>

@@ -12,7 +12,7 @@
                      </div>
                      <div class="flex date-cmnt" style="margin-top:-15px">
                      <span class="left-side ClanOT-News" ><?php the_time("F j, Y"); ?></span>
-                        <span class="right-side ClanOT-News"><?php comments_number( '0 Comment', '1 Comment', '% Comments' ); ?></span>
+                        <span class="right-side ClanOT-News"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></span>
                         </div>
                       
                   </div>

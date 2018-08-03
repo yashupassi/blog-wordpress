@@ -64,7 +64,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
                   <span class="boxed-date ClanOT-News">'
                   .date('F j, Y',strtotime($post->post_date)). 
                   '</span>
-                  <span class="boxed-comments ClanOT-News">' . $post->comment_count .' Comments'.'</span>
+                  <span class="boxed-comments ClanOT-News">' . ($post->comment_count==1?"1 Comment":$post->comment_count." Comments") .'</span>
                </div>
             </div>
          </div><div class="clearfix"></div>';
